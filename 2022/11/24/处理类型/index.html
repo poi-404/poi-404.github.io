@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="五月梧桐">
+    
+    <title>
+        
+            处理类型 |
+        
+        My Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/fontawesome/css/brands.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/xxx.png","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/61438972_p0.jpg","description":null,"font_color":null,"hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["摆烂"]},"word_count":{"enable":true,"wordcount":true,"min2read":true},"img_align":"left","copyright_info":true},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               My Blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">处理类型</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/xxx.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">五月梧桐</span>
+                            
+                                <span class="author-label">摆烂</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-11-24 23:09:50</span>
+        <span class="mobile">2022-11-24 23:09</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-11-24 23:10:20</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/C-C/">C/C++</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/C-C/">C/C++</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.3k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>5 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h2 id="类型别名（type-alias）"><a href="#类型别名（type-alias）" class="headerlink" title="类型别名（type alias）"></a>类型别名（type alias）</h2><p>由两种方法可以定义类型别名。传统的方法是使用<code>typedef</code>关键字。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">double</span> wages;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">const</span> <span class="type">int</span> CINT;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> &#123;</span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">    <span class="type">int</span> b;</span><br><span class="line">&#125; MY_STRUCT;</span><br></pre></td></tr></table></figure>
+
+<p>C++11标准规定了一种新的方法，使用<strong>别名声明（alias declaration）</strong>来定义类型的别名：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> CINT = <span class="type">const</span> <span class="type">int</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sales_item</span> &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">using</span> SI = Sales_item;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>别名只在当前作用域内生效</li>
+</ul>
+<h3 id="别名的错误理解"><a href="#别名的错误理解" class="headerlink" title="别名的错误理解"></a>别名的错误理解</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> x = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">using</span> pint = <span class="type">int</span>*;</span><br><span class="line"><span class="type">const</span> pint p = &amp;x;</span><br></pre></td></tr></table></figure>
+
+<p>遇到一条使用了类型别名的声明语句时，人们往往会错误地尝试把类型别名替换成它本来的样子，以理解该语句的含义。比如下面这样，很多人会将第一条语句错误的理解为第二条语句。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> pint p = &amp;x;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span>* p = &amp;x;  <span class="comment">//注意：这是对上一条语句的错误理解</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>const pint p</code>：其中<strong>const</strong>是修饰<strong>p</strong>的，相当于<code>int* const p</code>。p是一个指向int的指针常量。</li>
+<li><code>const int* p</code>：其中的const是修饰int的，p是一个指向const int的常量指针。</li>
+</ul>
+<h2 id="auto-类型占位符（类型说明符）"><a href="#auto-类型占位符（类型说明符）" class="headerlink" title="auto 类型占位符（类型说明符）"></a>auto 类型占位符（类型说明符）</h2><p>变量的类型过于复杂或无法确定表达式的类型时，就可以使用类型占位符<code>auto</code>来定义。</p>
+<p><code>auto</code> 让编译器通过初始值来推算变量的类型，所以 <code>auto</code> 定义的变量必须有初始值。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> n = <span class="number">3</span>; <span class="comment">//3是int类型,所以推断出n是int类型</span></span><br><span class="line"><span class="keyword">auto</span> p = <span class="string">&quot;test&quot;</span>;</span><br><span class="line">p = <span class="number">55</span>; <span class="comment">//报错, p是const char*类型,不能赋值int类型的值</span></span><br><span class="line"><span class="keyword">auto</span> z; <span class="comment">//报错, 没有初始值，无法推断z的类型</span></span><br></pre></td></tr></table></figure>
+
+<p>若使用 <code>auto</code> 在一条语句中声明多个变量，那么该语句中所有变量的初始基本数据类型都必须一样。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> i = <span class="number">0</span>, *p = &amp;i;	<span class="comment">// 正确：i是整型，p是整型指针</span></span><br><span class="line"><span class="keyword">auto</span> sz = <span class="number">0</span>, pi = <span class="number">3.14</span>;	<span class="comment">// 错误：sz和pi的类型不一样</span></span><br></pre></td></tr></table></figure>
+
+<p>如果使用数组名作为 auto 变量的初始值，推断得到的类型是指针，而不是数组。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">4</span>] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">auto</span> i = arr;  <span class="comment">// i是int*类型，而不是int [4]类型。相当于：auto i = &amp;arr[0];</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 引用可以正常使用</span></span><br><span class="line"><span class="keyword">auto</span>&amp; r = arr;  <span class="comment">// r是arr的引用，也是数组类型。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常量和auto"><a href="#常量和auto" class="headerlink" title="常量和auto"></a>常量和auto</h3><p>auto 一般会忽略掉初始值的顶层 const，而底层 cosnt 则会保留下来。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> ci = i;  <span class="comment">// 自身是常量，顶层const</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *cp = &amp;i;  <span class="comment">// 指向常量，底层const</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *<span class="type">const</span> ccp = &amp;i;  <span class="comment">// 靠左的是底层const，靠右的是顶层const</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;cr = ci;</span><br><span class="line"></span><br><span class="line"><span class="keyword">auto</span> a = ci;   <span class="comment">// a是一个int类型（ci的顶层const特性被忽略了）</span></span><br><span class="line"><span class="keyword">auto</span> b = cp;   <span class="comment">// b是const int*类型（cp的底层const保留下来）</span></span><br><span class="line"><span class="keyword">auto</span> c = cr;   <span class="comment">// c是一个int类型（cr是ci的别名，ci本身是一个顶层const）</span></span><br><span class="line"><span class="keyword">auto</span> d = &amp;i;   <span class="comment">// d是int*类型</span></span><br><span class="line"><span class="keyword">auto</span> e = &amp;ci;  <span class="comment">// e是一个指向int常量的指针（&amp;ci是一个指向常量的指针，属于底层const）</span></span><br><span class="line"><span class="keyword">auto</span> f = ccp;  <span class="comment">// f是const int*类型（靠右的顶层const被忽略了）</span></span><br></pre></td></tr></table></figure>
+
+<p>如果希望推断出的 auto 类型是一个顶层 const（自身是常量），需要明确指出：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="keyword">auto</span> x = ci;  <span class="comment">// x是const int类型</span></span><br></pre></td></tr></table></figure>
+
+<p>还可以将引用的类型设为 auto，此时原来的引用初始化规则任然适用：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> &amp;g = ci;         <span class="comment">// g是一个整型常量引用</span></span><br><span class="line"><span class="keyword">auto</span> &amp;h = <span class="number">42</span>;         <span class="comment">// 错误：不能为非常量引用绑定字面值</span></span><br><span class="line"><span class="type">const</span> <span class="keyword">auto</span> &amp;j = <span class="number">42</span>;   <span class="comment">// 正确：常量引用可以绑定字面值</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>设置一个类型为 auto 的引用时，初始值中的顶层 const 特性仍然保留。</strong></li>
+</ul>
+<h2 id="decltype-类型指示符"><a href="#decltype-类型指示符" class="headerlink" title="decltype 类型指示符"></a>decltype 类型指示符</h2><p><code>decltype</code> 的作用是选择并返回操作数的数据类型。在此过程中，编译器分析表达式并得到它的类型，<strong>却不实际计算表达式的值</strong>。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">f</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">6</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">decltype</span>(<span class="built_in">f</span>()) n = <span class="number">1</span>;	<span class="comment">// n的类型是函数f的返回类型，即n为int型。</span></span><br><span class="line"><span class="comment">// 编译器并不实际调用函数f，只是分析表达式 f() 的最终类型是什么。</span></span><br></pre></td></tr></table></figure>
+
+<p>对于引用类型，decltype得到的还是引用类型，而不是所引用的对象的类型</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="type">int</span>&amp; r = i;</span><br><span class="line"><span class="type">int</span>* p = &amp;i;</span><br><span class="line"></span><br><span class="line"><span class="keyword">decltype</span>(r) x;   <span class="comment">// 错误：r是引用类型int&amp;，所以x也是引用类型。引用类型必须初始化。</span></span><br><span class="line"><span class="keyword">decltype</span>(*p) y;  <span class="comment">// 错误：指针解引用后得到的是引用类型int&amp;，所以必须初始化。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果想通过引用得到目标对象的类型，可以把引用作为表达式的一部分</span></span><br><span class="line"><span class="keyword">decltype</span>(r+<span class="number">0</span>) x;  <span class="comment">// 正确：加法的结果是int，所以x是int类型。</span></span><br></pre></td></tr></table></figure>
+
+<p>对于数组类型，与 auto 不同，decltype得到的还是数组类型，而不是指针类型。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">4</span>] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">decltype</span>(arr) i;  <span class="comment">// i的类型是int [4]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：对于decltype所用的表达式来说，如果变量名加上括号，则得到的类型与不加括号时会有不同。</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">decltype</span>((i)) x;  <span class="comment">// 错误：x是引用类型int&amp;，必须初始化</span></span><br><span class="line"><span class="keyword">decltype</span>(i) x;    <span class="comment">// x是int类型</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>变量是一种可以作为语句左值的特殊表达式，所以这样的decltype就会得到引用类型。</li>
+</ul>
+<blockquote>
+<p>切记：<code>decltype((variable))</code>的结果永远是引用，而<code>decltype(variable)</code>的结果只有当<code>variable</code>本身是引用时才是引用。</p>
+</blockquote>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul class="copyright-info-content">
+        <li>
+            <span class="type">本文标题</span>：<span class="content">处理类型</span>
+        </li>
+        <li>
+            <span class="type">本文作者</span>：<span class="content">五月梧桐</span>
+        </li>
+        <li>
+            <span class="type">创建时间</span>：<span class="content">2022-11-24 23:09:50</span>
+        </li>
+        <li class="post-link">
+            <span class="type">本文链接</span>：<span class="content">2022/11/24/处理类型/</span>
+        </li>
+        <li>
+            <span class="type">版权声明</span>：<span class="content">本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！</span>
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/C-C/">#C/C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2022/11/24/%E5%87%BD%E6%95%B0/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">函数</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2022/11/24/%E5%BC%95%E7%94%A8/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">引用</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D%EF%BC%88type-alias%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">类型别名（type alias）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%AB%E5%90%8D%E7%9A%84%E9%94%99%E8%AF%AF%E7%90%86%E8%A7%A3"><span class="nav-number">1.1.</span> <span class="nav-text">别名的错误理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#auto-%E7%B1%BB%E5%9E%8B%E5%8D%A0%E4%BD%8D%E7%AC%A6%EF%BC%88%E7%B1%BB%E5%9E%8B%E8%AF%B4%E6%98%8E%E7%AC%A6%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">auto 类型占位符（类型说明符）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E9%87%8F%E5%92%8Cauto"><span class="nav-number">2.1.</span> <span class="nav-text">常量和auto</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#decltype-%E7%B1%BB%E5%9E%8B%E6%8C%87%E7%A4%BA%E7%AC%A6"><span class="nav-number">3.</span> <span class="nav-text">decltype 类型指示符</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+
+
+<script src='https://unpkg.com/mermaid@9.2.2/dist/mermaid.min.js'></script>
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({theme: 'forest'});
+  }
+</script>
+
+
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">五月梧桐</a>
+            
+        </div>
+        
+            <script async data-pjax
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                
+                
+                    总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/dark-light-toggle.js"></script>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/code-block.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/post-helper.js"></script>
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/libs/anime.min.js"></script>
+        
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/toc.js"></script>
+        
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.5.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
